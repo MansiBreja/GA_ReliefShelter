@@ -1,39 +1,651 @@
-Payyannur,179741,14,6.7
-Ramanthali,25711,5,2.1
-Peralam,7607,4,7.2
-Varkala,159846,7,1.3
-Edava,25994,19,3.8
-Ayiroor,25307,17,14.9
-Mananthavady,260544,17,3.7
-Thirunelly,12878,12,13.7
-Thrissilery,16818,2,3.5
-Manjeshwar,237875,7,10.9
-Pavoor,4798,8,1.5
-Vorkady,8787,16,9.6
-Areekode,245828,14,13.3
-Vettilappara,8696,2,14.8
-Cheekkode,22413,4,12.6
-Parakkadavu (Part),47199,19,4.9
-Parakkadavu,30766,1,1.5
-Kunnukara,16433,4,8.4
-Uzhavoor,147771,4,10.5
-Veliyannoor,9917,2,2.7
-Monippally,10733,16,5.6
-Veliyanad (Part),83,8,2.0
-Peringara (Part),83,7,7.4
-Pulikkeezh (Part),87619,5,7.2
-Chowwannur,30575,2,5.4
-Perumpilavu,9896,11,7.8
-Chowwannur (Part),6907,14,13.5
-Vadakara,28650,10,3.3
-Onchiam,28650,7,6.6
-Thuneri,57070,1,3.2
-Veliyanad (Part),83453,1,6.1
-Pulinkunnu,15210,2,6.4
-Kunnumma,14252,16,10.7
-Thrithala,160180,11,12.7
-Anakkara,24699,17,2.0
-Pattithara,33157,12,4.3
-Muvattupuzha (Part),642,8,4.6
-Kumaramangalam (Part),642,19,12.5
-Kothamangalam (Part),105,15,11.2
+Location,Population,Number of days before submerging,Cost of setup
+Payyannur,179741,7,11.8
+Ramanthali,25711,13,0.5
+Peralam,7607,5,13.3
+Kankole,10665,4,0.9
+Alapadamba,8660,11,11.5
+Eramam,9448,17,4.4
+Perinthatta,5416,12,12.2
+Kuttoor,8143,3,8.5
+Vellora,10239,16,7.2
+Peringome,16721,7,4.3
+Vayakkara,18687,5,6.6
+Pulingome,10672,4,13.5
+Thirumeni,8611,18,4.3
+Panapuzha,11355,18,1
+Mattool,27806,18,8.2
+Taliparamba,187567,2,11.3
+Thimiri,18044,20,14.3
+Alakode,33173,6,1.6
+Vellad,25875,8,12.5
+New Naduvil,20369,12,13.3
+Kooveri,19033,7,0.1
+Panniyoor,12382,19,2.5
+Kuttiyeri,12473,6,2.8
+Pattuvam,15659,19,2.1
+Chuzhali,14759,13,14.5
+Chengalai,15800,4,12.1
+Irikkur,159443,6,11.9
+Nediyanga,15859,10,10.6
+Eruvassy,19216,5,9.6
+Payyavoor,22998,5,2.3
+Nuchiyad,12686,3,4.1
+Vayathur,22743,3,12.1
+Padiyoor,12114,5,1.6
+Kalliad,9410,19,5.8
+Sreekandapuram,17630,1,0.7
+Malapattam,9628,6,6
+Kayaralam,17159,7,4.5
+Kannur,0,16,11.6
+Edakkad,0,8,13.8
+Iritty,149915,11,6.5
+Pattannur,15003,11,5.3
+Chavassery,22480,14,5.1
+Keezhur,16597,11,11.6
+Payam,15429,9,0.9
+Vilamana,14059,12,7
+Ayyankunnu,22436,14,9.1
+Aralam,29328,15,6.5
+Thillenkeri,14583,7,8.7
+Peravoor,136313,14,6.1
+Kottiyoor,16698,7,14.6
+Varkala,159846,7,8.4
+Edava,25994,14,8.7
+Ayiroor,25307,4,12.3
+Chemmaruthy,32444,12,2.9
+Ottoor,16085,11,3.1
+Vettoor-Cherunniyoor ,36818,4,2.6
+Manamboor,23198,11,9.2
+Kilimanoor,198519,7,0.5
+Navaikulam,26551,12,8.5
+Pallickal,16873,16,14.5
+Madavoor,21118,3,11
+Kudavoor,14151,3,8.3
+Vellalloor,11440,9,1.9
+Kilimanoor,20515,2,3.4
+Pazhayakunnummel,24608,1,0.7
+Pulimath,22045,4,12.3
+Koduvazhannoor,10248,5,3.7
+Nagaroor,15072,1,13.4
+Karavaram,15898,17,0.4
+Chirayinkeezhu,78143,13,9
+Elamba-Mudakkal,20314,5,9.4
+Attingal-Avanavancherry (Part),5290,6,9.8
+Kadakkavoor,22632,9,4.9
+Sarkara-Chirayinkeezhu,29907,19,2.3
+Vamanapuram,216222,19,1.5
+Nellanad,25981,5,11.3
+Vamanapuram,21038,20,0.3
+Kallara,25844,9,7.2
+Pangode,29039,20,14.7
+Peringamala,19164,15,6.1
+Thennoor (Part),10344,2,0.8
+Palode,14922,5,7.8
+Kurupuzha,10167,2,8.6
+Pullampara,21817,19,14.8
+Koliyakode,19274,14,6.4
+Manikkal,18632,20,3
+Vellanad,192465,14,7.5
+Thennoor (Part),1302,2,9.6
+Tholicode,31784,4,9.5
+Vithura,18437,18,7.5
+Mannoorkara,18343,11,14.4
+Aryanad,26361,17,0
+Uzhamalackal,21472,13,2.3
+Aruvikkara (Part),513,11,10.2
+Vellanad,28667,6,9.3
+Perumkulam,19202,10,5.8
+Veeranakavu,26384,13,7.5
+Nedumangad,119714,12,7.1
+Panavoor,20348,14,8.2
+Theakada,13567,10,7.8
+Mananthavady,260544,12,1.6
+Thirunelly,12878,15,14.5
+Thrissilery,16818,1,10
+Payyampally,13311,1,5.2
+Mananthavady,34663,6,7.9
+Thavinhal,17840,20,6.8
+Periya,11174,13,9.4
+Thondernad,11752,14,6.1
+Valat,10799,20,14.9
+Edavaka,16737,5,3.3
+Nalloornad,16928,1,11.6
+Cherukottur,11462,10,4.7
+Panamaram,12683,1,5.3
+Anchukunnu (Part),19069,6,9.5
+Porunnanore,22137,19,7.6
+Vellamunda,18069,4,12.5
+Kanjirangad,11811,8,11.2
+Nadavayal (Part),2413,20,10.5
+Kalpetta,234439,17,12.6
+Anchukunnu (Part),9,5,8
+Nadavayal (Part),4367,8,5.9
+Poothadi (Part),58,7,12.9
+Purakkadi (Part),194,13,10.9
+Padinharethara,16146,1,2.8
+Kuppadithara,9761,14,8.6
+Kottathara ,17295,10,4.8
+Kaniambetta,29363,12,10.2
+Muttil North ,12382,2,8.5
+Muttil South (Part),22329,20,2.7
+Vengappally,11692,13,6.7
+Kavumannam,10106,13,13
+Thariyode,1653,13,12.2
+Achooranam,11998,18,7.5
+Pozhuthana,6406,18,12.8
+Kunnathidavaka,10309,15,14.5
+Chundale,7996,5,8.4
+Kottappadi (Part),23384,8,6.9
+Thrikkaipatta (Part),8551,5,8.1
+Muppainad,22892,13,9.1
+Vellarimala,7548,8,13.8
+Sulthan Bathery,290857,2,3.5
+Nadavayal (Part),9015,17,12.3
+Poothadi (Part),14520,7,3.8
+Pulpalli,28322,1,1.1
+Padichira,28970,19,2.3
+Kidanganad,9122,12,11.7
+Irulam,21052,17,7.6
+Purakkadi (Part),20828,12,3.8
+Krishnagiri,12952,15,14.7
+Sulthanbathery,23333,3,9.2
+Manjeshwar,237875,18,1.5
+Pavoor,4798,5,11.3
+Vorkady,8787,18,0.6
+Pathur,6383,2,6.6
+Kodalamogaru,5788,9,3.2
+Koliyoor,2743,10,11.2
+Kaliyoor,2323,15,12.7
+Talikala,1847,20,0.6
+Meenja,4144,3,3.6
+Kadambar,2616,20,4.7
+Moodambail,4779,4,2.1
+Kuloor,3381,1,4.5
+Majibail,1485,1,0.3
+Badaje,8170,1,2.2
+Mulinja,3841,9,12.4
+Kodibail,3614,5,4.9
+Ichilangod,4148,15,2.9
+Heroor,3195,4,12.1
+Kubanoor,2178,5,5.6
+Bekoor,1856,19,5.7
+Kayyar,4268,5,10
+Kudalmarkala,7081,2,11.9
+Paivalike,9034,19,8.4
+Chippar,2834,2,9.4
+Bayar,11057,16,8.1
+Badoor,5536,15,12
+Angadimogaru,2552,5,7.3
+Mugu,2951,17,14.8
+Maire,5080,4,1.1
+Enmakaje,12697,16,10.7
+Kattukukke,3955,17,13.4
+Padre,5092,4,12.5
+Badiyadka,10694,7,14.4
+Nirchal,12369,20,9.4
+Bela,11144,19,6.5
+Puthige,5441,17,13.3
+Edanad,2922,11,5.3
+Kannur,2421,4,10.1
+Kidoor,2569,7,9.7
+Ujarulvar,1328,7,10.9
+Bombrana,3759,14,2.5
+Arikady,8001,20,12.6
+Ichilampady,4001,17,1.6
+Ubrangala,3611,6,2.2
+Kumbadaje,11161,16,8.1
+Nettanige,6305,12,8.3
+Bellur,3936,4,10.8
+Kasaragod,208968,9,8.8
+Patla,5481,6,11.1
+Kalnad,18029,1,7
+Areekode,245828,18,5.6
+Vettilappara,8696,6,7.3
+Cheekkode,22413,4,5.6
+Areekode,31563,15,1.7
+Urangattiri,31601,10,10.9
+Kavanoor,37977,12,7.5
+Kuzhimanna,34413,15,1.6
+Muthuvallur,36482,2,1.8
+Pulpatta,42683,15,0.2
+Kondotty,106369,4,2.6
+Vazhakkad,35774,8,2.2
+Pulikkal,40133,7,5.7
+Nediyiruppu,30462,18,14.5
+Wandoor,368534,6,10.9
+Perakamanna,19696,19,9.8
+Edavanna,26432,8,7.7
+Karakunnu,16525,18,8.6
+Trikkalangode,15112,1,12.6
+Elankur,20453,8,10
+Vettikkattiri,22333,11,5.2
+Chembrasseri,14474,8,8.4
+Pandikkad,18406,13,3.7
+Pullipadam (Part),9740,13,8.4
+Mambad,25521,20,4.3
+Thiruvali,27734,4,10.7
+Porur,29561,4,6.6
+Wandoor,50973,9,14.2
+Thuvvur,29991,14,13.4
+Kerala Estate,14871,14,1.6
+Karuvarakundu,26712,5,9.2
+Malappuram,122893,18,9.6
+Morayur,33960,7,8.3
+Pookkottur,37636,12,8.1
+Pandalur,17375,4,11
+Ponmala,33922,8,9.1
+Nilambur,312590,1,14.5
+Pullipadam (Part),1355,19,14.8
+Akampadam,16964,14,11
+Kurumbilangode,21803,6,13.6
+Chungathara,35406,8,12.7
+Edakkara,60573,5,0.8
+Vazhikkadavu,47322,19,4.1
+Amarambalam,35975,20,1
+Karulai,25758,12,0.5
+Chekkode,19510,8,6.3
+Kalikavu,22018,14,13
+Vellayur,25906,16,12.9
+Perintalmanna,224563,9,13
+Edappatta,22729,16,4
+Melattur,27250,5,8.5
+Parakkadavu (Part),47199,6,6.1
+Parakkadavu,30766,17,10.3
+Kunnukara,16433,10,9.2
+Chalakudy (Part),348,15,14.5
+Kuttampuzha (Part),348,7,11.7
+Koovappady,100384,7,6.4
+Kodanad,14244,1,3.7
+Kombanad,10976,1,8.4
+Vengoor,10961,12,3.4
+Vengoor West,17355,9,6
+Asamannoor,19311,18,7.1
+Rayamangalam,27537,18,1.1
+Vazhakulam,51142,1,1.7
+Arakapady,17779,16,12.3
+Pattimattom (Part),10177,2,12.9
+Kizhakkambalam,23186,4,13.1
+Vadavukode,114574,9,5.2
+Irapuram ,19137,4,7.1
+Mazhuvannoor,14946,8,4.5
+Pattimattom (Part),11418,16,6.2
+Vadavukode,2377,18,14
+Aikaranad North,20316,10,8.3
+Aikaranad South,21053,16,13.1
+Thiruvaniyoor,25327,16,1.3
+Angamaly,113930,20,15
+Karukutty,28076,16,10.8
+Mookkannoor,19009,16,5.9
+Ayyampuzha,14253,5,4.1
+Manjapra,15312,16,0.3
+Malayattoor,14494,1,7.7
+Thuravoor,22786,11,14.3
+Alangad,0,17,0.6
+Paravur,10813,6,2.2
+Ezhikkara,10813,17,11.9
+Vypin,102093,12,13.5
+Kuzhuppilly,23858,9,14.6
+Pallippuram,32321,6,10.1
+Edavanakkad,21787,19,4
+Nayarambalam,24127,18,5.2
+Palluruthy,14928,19,13.2
+Chellanam,14928,4,12.7
+Edapally,546,3,14.3
+Thrikkakara North (Part),546,7,7.5
+Mulamthuruthy,32428,18,11.9
+Edakkattuvayal,11912,14,12.7
+Kaippattur,6246,17,5.8
+Kulayettikara,7914,2,5.9
+Keecherry,6356,7,5.7
+Vyttila,0,4,6.6
+Muvattupuzha (Part),150753,1,7.2
+Uzhavoor,147771,10,10.6
+Veliyannoor,9917,15,3.4
+Monippally,10733,19,4.1
+Uzhavoor,9063,20,12.1
+Vellilappally (Part),15208,1,13.9
+Ramapuram (Part),14187,20,5.8
+Kurichithanam,9383,7,11.9
+Kuravilangad,18033,2,14.6
+Kanakkari (Part),22744,20,4.6
+Elackad,13333,8,4.8
+Kidangoor,25170,19,14.1
+Lalam,104452,5,12.3
+Vellilappally (Part),1301,2,4.5
+Ramapuram (Part),2741,6,5.9
+Kadanad,14692,9,7.8
+Thalappalam (Part),75,3,12.7
+Bharananganam (Part),15666,19,4.6
+Lalam (Part),9137,15,10.9
+Vallichira,13716,19,8
+Puliyannoor (Part),15414,2,10.4
+Meenachil (Part),15608,14,2.2
+Poovarany,16102,13,4.1
+Erattupetta,97329,3,4.4
+Melukavu,9385,4,8.4
+Moonilavu,9213,1,13.7
+Poonjar Vadakkekara,8222,2,12.6
+Teekoy,9418,15,2.2
+Thalappalam (Part),9360,12,13.2
+Bharananganam (Part),1483,14,4.6
+Kondoor,20510,2,1.7
+Poonjar Thekkekara,19470,4,5.6
+Poonjar Nadubhagam,10268,18,9.6
+Ettumanoor,61873,11,12.7
+Kanakkari (Part),49,6,4.7
+Arpookara,23366,1,9.2
+Kaipuzha,6328,17,2.2
+Onamthuruth,13375,16,0.5
+Peroor,18691,19,4.5
+Kumarakam (Part),64,3,12.8
+Vaikom,125092,12,3
+Chempu,21049,15,13.3
+Kulasekharamangalam,21728,18,4
+Vadakkemuri (Part),17019,17,13.9
+Naduvile (Part),8593,7,4.9
+Vaikom (Part),19511,12,4.4
+Thalayazham,20151,13,6.2
+Vechoor,17041,3,3.6
+Kaduthuruthy,162088,9,9.8
+Velloor,22785,16,11.4
+Mulakulam,22360,20,2.5
+Veliyanad (Part),83,19,10
+Peringara (Part),83,11,12.1
+Pulikkeezh (Part),87619,2,3.2
+Niranam,10770,18,1.9
+Kadapra,23502,18,3.1
+Nedumpuram,12694,13,11.5
+Peringara (Part),14357,8,6.2
+Kavumbhagom (Part),6644,20,5.8
+Kuttoor,19652,9,6.2
+Kulanada (Part),66775,15,8
+Kulanada,21217,2,2.9
+Mezhuveli,16863,20,4.7
+Kidangannur,14264,4,1.5
+Aranmula,14431,5,7.5
+Bharanikkavu (Part),44,13,4.4
+Pallickal (Part),44,1,6.9
+Mallappally,118203,6,1.6
+Kaviyoor,16852,15,1.9
+Kunnamthanam,20573,20,9.6
+Kallooppara,16837,3,0.5
+Mallappally,17693,14,0
+Anicad,14678,12,2.7
+Kottangal,17174,11,0.3
+Perumpetty,14396,14,5.8
+Koipuram,120731,11,7.6
+Eraviperoor,25172,12,12.3
+Koipuram,26425,14,0.2
+Thottapuzhassery,14469,20,7.7
+Ezhumattoor,10698,17,3
+Thelliyoor,8101,14,12
+Puramattam,14069,6,10.2
+Ayiroor,21797,18,0.1
+Ranni,164463,5,8.8
+Chethakkal,15027,9,13.2
+Kollamula,22449,3,13.2
+Perunad,15018,16,6.2
+Athikkayam,9548,11,13.6
+Pazhavangadi,20068,6,2.5
+Angadi,14855,14,1.4
+Ranni (Part),13345,5,9.2
+Vadasserikkara (Part),21755,1,7
+Chittar-Seethathodu,31969,8,1.2
+Mylapra (Part),100,11,7.9
+Thannithode (Part),329,8,11
+Elanthoor,92484,5,0.4
+Cherukole,12169,6,6
+Mallapuzhassery,11784,10,2.9
+Elanthoor,15344,16,10.9
+Chenneerkara,19124,3,13.8
+Omalloor,17611,10,13.7
+Chowwannur,30575,18,4.3
+Perumpilavu,9896,12,1.1
+Chowwannur (Part),6907,5,14.2
+Mangad (Part),3989,3,1.9
+Kanipayyur (Part),3245,14,12.8
+Chemmanthatta,6538,5,14.4
+Wadakkanchery,125557,1,10.6
+Kadangode,9016,10,6.1
+Thichur,8165,18,13.5
+Arangottukara,3013,18,5.1
+Pallur,7197,3,9
+Thalassery,3318,16,5.1
+Pilakkad,3276,11,4.5
+Varavoor,8944,16,0.2
+Attoor,7327,19,10.2
+Mullurkara,13491,18,5
+Kanjirakode,4474,3,0.7
+Vellarakkad,5771,11,0
+Vellattanjur,6704,4,11.2
+Thayyur,4740,5,8.4
+Kiralur,2261,13,12.4
+Parlikad,4771,16,4.9
+Puthuruthy,4390,9,3.3
+Thekkumkara,15267,9,2.3
+Karumathara,3814,6,11.6
+Viruppakka,2037,8,5.7
+Manalithara,7581,15,12.9
+Pazhayannur,135913,9,0.7
+Painkulam,9517,15,11.3
+Mayannur,6660,16,0.7
+Pampady,3515,15,4.7
+Thiruvilwamala,11793,15,6.5
+Vadakkethara,10261,17,10.2
+Kondazhy,11507,1,8.4
+Chelakode,4236,12,13.5
+Venganellur,10664,19,0.9
+Killimangalam,9119,16,14.9
+Panjal,6388,19,5.6
+Kurumala,3536,1,9.4
+Thonnurkara,6799,1,10.4
+Pangarappilly,5467,17,8.5
+Pulakode,6456,5,1.1
+Pazhayannur,16688,2,5.2
+Vennur,3023,6,14.5
+Elanad,10284,15,14.7
+Chavakkad,22929,4,7.9
+Kadappuram (Part),22929,9,10.9
+Talikkulam,77753,7,1.3
+Kadappuram (Part),9,16,12
+Engandiyur,23101,20,2
+Vadakara,28650,10,11.1
+Onchiam,28650,5,11.8
+Thuneri,57070,8,2.8
+Vanimel,25680,3,3.8
+Vilangad,3778,12,9.1
+Purameri,27612,7,13.6
+Kunnummal,139895,2,12.8
+Thinoor,5148,14,1.6
+Kavilumpara,19212,12,6.8
+Kayakkodi,24578,7,10.8
+Narippatta,21381,14,3.5
+Velom,26738,15,8.8
+Kuttiadi,19351,18,12.5
+Maruthonkara,23487,9,10.1
+Thodannur,14429,16,10.6
+Thiruvallur,14429,9,5.8
+Melady,23576,3,6.4
+Payyoli,23576,2,6.6
+Perambra,122773,15,8.7
+Cheruvannur,23388,9,4.4
+Palery,14680,4,11
+Changaroth,17427,16,3.8
+Chempanoda,5398,12,8.7
+Chakkittapara (Part),9932,13,0.9
+Perambra,11336,16,9.2
+Nochad,26857,5,1.5
+Kayanna (Part),13434,15,8.5
+Koorachundu (Part),321,6,2.7
+Balusseri,116981,17,15
+Chakkittapara (Part),1831,12,14.1
+Kottur,12205,15,9.7
+Kayanna (Part),3342,7,1.9
+Koorachundu (Part),11981,12,13.2
+Kanthalad (Part),9946,9,3.2
+Avitanallur,18398,17,5.9
+Kinalur,9930,17,14.9
+Unnikulam,24912,1,4.5
+Sivapuram,24436,4,8.1
+Panthalayani,75339,8,1.4
+Moodadi,30170,10,7.1
+Arikkulam (Part),18378,1,10.4
+Chengottukavu,26791,4,1.6
+Koduvally,260835,16,9.3
+Kanthalad (Part),57,9,12.3
+Kizhakkoth,31261,16,14.1
+Vavad,14818,5,8.3
+Raroth,33286,14,7.2
+Kedavur,27273,17,13.2
+Puthuppadi,25965,20,14.2
+Engapuzha,18244,9,9.7
+Veliyanad (Part),83453,2,7.7
+Pulinkunnu,15210,17,1.2
+Kunnumma,14252,7,8.8
+Kavalam,13089,15,7.7
+Neelamperoor,5841,12,10.6
+Veliyanad,12501,3,6.6
+Ramankary,10755,13,3.9
+Edathua  (Part),2605,13,6.9
+Muttar,9200,16,14.4
+Thaikattussery,41303,9,1.9
+Perumbalam,9733,1,8.6
+Panavally,31570,17,1.1
+Pattanakkad,80918,17,4.2
+Thuravoor Thekku,28802,11,14.5
+Pattanakkad,31629,19,1.1
+Kadakkarappally,20487,6,3.2
+Kanjikkuzhi,71424,6,14.7
+Cherthala North (Part),13945,9,8.3
+Cherthala South (Part),26157,1,10.8
+Mararikkulam North,31322,16,11
+Aryad,29808,11,10.3
+Kalavoor,29808,2,13.9
+Aryad South (Part) (UI),0,1,4.1
+Ambalappuzha ,73790,4,8.1
+Ambalappuzha,33939,18,2.1
+Karumady  (Part),10069,9,14.7
+Purakkad,29782,4,7.6
+Champakkulam,113022,13,9.1
+Mullakkal (Part) ,497,1,13.8
+Karumady (Part),3068,12,13.2
+Kainakary North,8292,11,2.9
+Kainakary South,15405,7,2.5
+Champakkulam,15848,5,11.1
+Nedumudi,14601,15,6
+Thakazhy,15758,16,2.1
+Edathua  (Part),19094,15,4.2
+Thalavady (Part),20459,20,7.6
+Pulikkeezh (Part),97,19,12.3
+Thalavady (Part),97,18,3.7
+Haripad,90356,14,4.8
+Karuvatta,14755,12,13.8
+Cheruthana,12882,19,2.4
+Veeyapuram,11392,2,10.2
+Pallippad,24648,5,14.7
+Thrikkunnapuzha,26679,12,3.9
+Muthukulam,29264,16,6
+Arattupuzha,29264,6,4.4
+Chengannur,144927,18,1.9
+Ennakkad,18444,5,6.4
+Pandanad (Part),11489,15,14.1
+Thrithala,160180,3,1.7
+Anakkara,24699,7,7.5
+Pattithara,33157,18,2.6
+Kappur,31337,19,9.2
+Chalissery,24238,11,13.4
+Nagalassery,27606,18,9.7
+Thirumittacode-I,19143,3,3.3
+Pattambi,206273,2,1.4
+Parudur,26638,14,2.2
+Thiruvegapura,33942,2,7.5
+Vilayur,23389,17,13.9
+Kulukkallur,27971,19,10.6
+Nellaya,36146,3,0.7
+Vallapuzha,28018,18,11.2
+Koppam,30169,5,6.8
+Sreekrishnapuram,178585,3,1.2
+Cherpulacherry,34899,10,3.8
+Vellinezhi,20168,9,1.4
+Karimpuzha-I,19287,4,2.7
+Karimpuzha-II,12830,11,0.7
+Kadampazhipuram-II,15363,5,5.1
+Kadampazhipuram-I,16003,18,3.3
+Sreekrishnapuram -I,14797,7,3.2
+Sreekrishnapuram -II,14736,8,3.1
+Thrikkadeeri -II,15357,11,12.8
+Thrikkadeeri -I,15005,19,14.4
+Kongad-II (Part),140,3,0.1
+Ottappalam,135010,15,12.6
+Ananganadi,24445,15,7.3
+Chalavara,23466,9,12.5
+Vaniyamkulam-I,15965,13,13.3
+Ambalapara - II,24889,6,6.3
+Ambalapara - I,13387,15,8.5
+Lakkidi-Perur- I ,13358,4,12.5
+Lakkidi-Perur- II (Part),19401,11,8.8
+Mannur (Part),5,10,6.3
+Mankara (Part),94,6,5.5
+Palakkad,172514,18,3.4
+Lakkidi-Perur- II (Part),58,3,2.8
+Kongad-II (Part),15212,8,13.3
+Keralassery,15022,16,6.7
+Mannur (Part),19800,18,9.3
+Mankara (Part),18687,11,5.8
+Kongad-I,14808,6,9.1
+Mundur-II,10314,20,13.4
+Mundur-I,20334,5,10.1
+Parli-I,17369,19,9.9
+Parli-II,17082,9,2.8
+Kannadi-II (Part),2698,15,13.5
+Kodumba,21130,3,14.8
+Muvattupuzha (Part),642,11,13
+Kumaramangalam (Part),642,8,14.4
+Kothamangalam (Part),105,14,2.7
+Kumaramangalam (Part),15,8,14
+Kodikulam (Part),90,10,12.7
+Devikulam,121577,2,1
+Marayoor,12399,13,8.9
+Keezhanthoor,4205,8,5.2
+Kanthalloor,6758,1,10.5
+Kottakamboor,2405,20,7.7
+Vattavada,3292,9,6.3
+Kannan Devan Hills,55738,7,9.1
+Mankulam,9595,7,9.9
+Chinnakanal,12005,14,1.2
+Poopara (Part),7971,19,12.8
+Rajakumari (Part),427,7,5
+Santhanpara,6782,6,8.7
+Adimali,126262,3,11
+Mannamkandam,40593,10,4.2
+Anaviratty,5050,17,4.9
+Pallivasal,10875,4,11.9
+Kunjithanny,12202,6,2.5
+Vellathuval,14509,8,1.8
+Konnathady,29092,8,9.8
+Rajakkad (Part),1288,14,7
+Baisonvally,12653,14,1.3
+Nedumkandam,147661,7,4.2
+Rajakkad (Part),15198,19,13.9
+Poopara (Part),260,20,4.6
+Rajakumari (Part),15826,18,0.2
+Kanthippara,10901,19,0.7
+Chathurangapara,4177,19,11.5
+Udumbanchola,10064,8,6.4
+Kalkoonthal (Part),23009,12,4
+Parathodu,20417,1,2.4
+Pampadumpara,17336,14,12.6
+Karunapuram,30473,4,10.3
+Idukki,124516,14,10
+Vathikudy,26359,7,10.8
+Upputhode,8755,8,2.8
+Thankamony,24389,7,13.6
+Kanjikuzhi,26809,19,3.6
+Idukki,21724,13,13.2
+Arakkulam (Part),11716,10,4.2
+Kudayathoor (Part),444,19,6.4
+Elappally,4320,1,11.7
+Kattappana,178506,18,10.7
+Kalkoonthal (Part),18997,10,10
+Vandanmedu,12138,13,14.4
+Kattappana,42646,19,3.5
