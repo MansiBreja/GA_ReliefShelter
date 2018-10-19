@@ -3,7 +3,9 @@ import geopy as gp
 import os
 import math
 import pandas as pd
+import matplotlib.pyplot as plt
 import numpy as np
+import folium
 import random
 from datetime import datetime
 random.seed(datetime.now())
@@ -17,16 +19,16 @@ from geopy import distance
 geopy.geocoders.options.default_timeout = 10
 #Choosing population size
 POP_SIZE = 20
-Number_of_gens=50
-P= 10
+Number_of_gens=20
+P= 15
 Budget = 100000000
 K= 100 # the number of times of current population that can be handled by a shelter
-NUM_LOCATIONS= 80
+NUM_LOCATIONS= 200
 CROSSOVER_RATE =0.7
 MUTATION_RATE  =0.01
 
 datafile=pd.read_csv('dataset2.csv')
-data= datafile[0:80]
+data= datafile[0:200]
 AreaLocations= [ ]
 locations= list(data['Location'])
 AreaPopulations= list(data['Population'])
@@ -158,7 +160,10 @@ def fitness_chromosome(chromosome):
         popsc=calcPopScore(chromosome,ShelterList)
         dist=calcMaxAvgDist(chromosome,ShelterList)
         cost=calcCost(chromosome,ShelterList)
-        return ((popsc)+ (cost))/(dist)
+        # print(popsc)
+        # print(cost)
+        # print(dist)
+        return ((popsc/(10^3))+ (cost/(10^5)))/(dist)
 
 # Returns list of fitness values of all the chromosomes of my population
 def fitness_pop(pop) :
@@ -166,11 +171,21 @@ def fitness_pop(pop) :
         for i in range(0, POP_SIZE) :
                 pop_fitness_list.append(fitness_chromosome(pop[i]))
         return pop_fitness_list
+
 def avg_fitness_pop(pop):
         fitness=0
         for i in range(0, POP_SIZE) :
                 fitness += fitness_chromosome(pop[i])
         return fitness/POP_SIZE
+
+def best_chromosome(pop):
+    fitness=0
+    best_chromo=[]
+    for i in range(0, POP_SIZE) :
+            if fitness_chromosome(pop[i])>fitness :
+                fitness =fitness_chromosome(pop[i])
+                best_chromo=pop[i]
+    return pop[i]
 
 def probability_calc(pop):
     fitness = fitness_pop(pop)
@@ -224,10 +239,6 @@ def crossover(chromo1,chromo2):
                 chromo1[i]=new_chromo1[i]
                 chromo2[i]=new_chromo2[i]
 
-
-
-
-
 def next_gen(pop,probabilities):
         next_gen=[]
         for i in range(POP_SIZE//2):
@@ -244,8 +255,30 @@ def next_gen(pop,probabilities):
 #Run main code
 current_population= initialpop()
 #print(current_population)
+gen_fitness=[]
 for i in range(Number_of_gens):
         probabilities=probability_calc(current_population)
         print(avg_fitness_pop(current_population) )
+        gen_fitness.append(avg_fitness_pop(current_population))
         sys.stdout.flush()
         current_population=next_gen(current_population,probabilities)
+
+bc=best_chromosome(current_population)
+print(bc)
+
+m = folium.Map(
+    location=[10.850516,76.271080],
+    zoom_start=12,
+    # tiles='Stamen Terrain'
+)
+
+tooltip = 'Click me!'
+for i in range(0, P) :
+    folium.Marker([AreaLatitudes[bc[i]],AreaLongitudes[bc[i]]], popup=locations[bc[i]], tooltip=tooltip).add_to(m)
+
+m.save('index.html')
+
+plt.plot(list(range(1,21)), gen_fitness)
+plt.ylabel('Avg fitness values')
+plt.xlabel('Generations')
+plt.show()
