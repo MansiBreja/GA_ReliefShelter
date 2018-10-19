@@ -25,8 +25,7 @@ F= (O1 + O3 )/O2
 * Our final population's best chromosome is plotted on map and is stored in index.html
 * Also, the GA code, after running completely plots a graph of average fitness over generations as shown below:
 
-
-![screenshot 224](https://user-images.githubusercontent.com/31369977/47204564-47a52200-d3a1-11e8-86e2-10f70827082f.png)
+![whatsapp image 2018-10-19 at 7 05 28 pm](https://user-images.githubusercontent.com/31369977/47222116-98ce0980-d3d3-11e8-8427-f9d8a6464ac2.jpeg)
 
 
 ## This is how index.html looks like:
