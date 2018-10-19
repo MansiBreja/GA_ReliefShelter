@@ -20,15 +20,15 @@ geopy.geocoders.options.default_timeout = 10
 #Choosing population size
 POP_SIZE = 20
 Number_of_gens=20
-P= 15
+P= 10
 Budget = 100000000
 K= 100 # the number of times of current population that can be handled by a shelter
-NUM_LOCATIONS= 200
+NUM_LOCATIONS= 100
 CROSSOVER_RATE =0.7
 MUTATION_RATE  =0.01
 
 datafile=pd.read_csv('dataset2.csv')
-data= datafile[0:200]
+data= datafile[0:100]
 AreaLocations= [ ]
 locations= list(data['Location'])
 AreaPopulations= list(data['Population'])
@@ -37,20 +37,11 @@ AreaCosts=list(data['Cost of setup'])
 AreaLatitudes=list(data['latitude'])
 AreaLongitudes=list(data['longitude'])
 
-def do_geocode(address):
-        try:
-                return geolocator.geocode(address)
-        except GeocoderTimedOut:
-                print(address+ ' not found')
 
 def sigmoid(x):
         #print "inside sigmoid"
         # sys.stdout.flush()
         return 1 / (1 + math.exp(-x))
-
-def getLocns():
-        for i in range(NUM_LOCATIONS):
-            AreaLocations.append(do_geocode(locations[i]+ ', Kerala'))
 
 def nearestShelter(Shelterset,locn):
         #print "inside nearestShelter"
@@ -179,13 +170,13 @@ def avg_fitness_pop(pop):
         return fitness/POP_SIZE
 
 def best_chromosome(pop):
-    fitness=0
-    best_chromo=[]
-    for i in range(0, POP_SIZE) :
-            if fitness_chromosome(pop[i])>fitness :
-                fitness =fitness_chromosome(pop[i])
-                best_chromo=pop[i]
-    return pop[i]
+        maxFitness=0
+        for i in range(POP_SIZE):
+                temp_fitness= fitness_chromosome(pop[i])
+                if temp_fitness>maxFitness:
+                        best=pop[i]
+                        maxFitness=temp_fitness
+        return best
 
 def probability_calc(pop):
     fitness = fitness_pop(pop)
