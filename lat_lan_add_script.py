@@ -8,9 +8,9 @@ from geopy import distance
 geopy.geocoders.options.default_timeout = 40
 import csv
 import random
-with open ('/home/mansi/Desktop/GA/outputs/demo_output_bada_11.csv', mode='w') as ofile:
+with open ('/home/mansi/Desktop/GA/outputs/demo_output_bada.csv', mode='a') as ofile:
 	data_writer = csv.writer(ofile, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-	for filepath in glob.glob(os.path.join('/home/mansi/Desktop/GA/my dataset_1','*.csv')):
+	for filepath in glob.glob(os.path.join('/home/mansi/Desktop/GA/my dataset','*.csv')):
 		with open(filepath) as csv_file:
 			csv_reader = csv.reader(csv_file, delimiter=',')
 			line_count = 0
