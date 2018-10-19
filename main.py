@@ -6,9 +6,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 import folium
+import time
 import random
 from datetime import datetime
-random.seed(datetime.now())
 import sys
 from random import randint
 import geopy.geocoders
@@ -16,19 +16,19 @@ from geopy.geocoders import Nominatim
 geolocator = Nominatim(user_agent="GA")
 from geopy.exc import GeocoderTimedOut
 from geopy import distance
-geopy.geocoders.options.default_timeout = 10
+random.seed(7561)
 #Choosing population size
-POP_SIZE = 20
-Number_of_gens=20
-P= 10
+POP_SIZE = 30
+Number_of_gens=50
+P= 5
 Budget = 100000000
-K= 100 # the number of times of current population that can be handled by a shelter
-NUM_LOCATIONS= 100
+K= 30 # the number of times of current population that can be handled by a shelter
+NUM_LOCATIONS= 50
 CROSSOVER_RATE =0.7
 MUTATION_RATE  =0.01
 
 datafile=pd.read_csv('dataset2.csv')
-data= datafile[0:100]
+data= datafile[175:225]
 AreaLocations= [ ]
 locations= list(data['Location'])
 AreaPopulations= list(data['Population'])
@@ -45,7 +45,6 @@ def sigmoid(x):
 
 def nearestShelter(Shelterset,locn):
         #print "inside nearestShelter"
-        sys.stdout.flush()
         distances= np.zeros(P)
         for i in range(P):
                 distances[i]= distance.vincenty((AreaLatitudes[ Shelterset[i]],AreaLongitudes[Shelterset[i]]),(AreaLatitudes[locn],AreaLongitudes[locn])).miles
@@ -60,20 +59,24 @@ def AssignShelters(chromosome):
                         ShelterList[nearestShelter(chromosome,i)].append(i)
         return ShelterList
 
-def checkConstraints(chromosome,ShelterList):
+def checkConstraints(chromosome,ShelterList,test=1):
         #print "inside Checkconstraints"
-        sys.stdout.flush()
         for i in range(P):
                 sumPopulation=0
                 if(AreaNODLs[chromosome[i]]==0):
+                        if(not test):
+                                print("zero NODL constraint violated")
                         return False
                 for j in range(len(ShelterList[i])):
 
                         #if AreaNODLs[ShelterList[i][j]]>AreaNODLs[chromosome[i]]:
-                        #        return False
+                                #return False
                         sumPopulation+= AreaPopulations[ShelterList[i][j]]
                 sumPopulation+=AreaPopulations[chromosome[i]]
                 if sumPopulation>K*AreaPopulations[chromosome[i]]:
+                        if(not test):
+                                print("K times constraint violated")
+                                print(sumPopulation//AreaPopulations[chromosome[i]])
                         return False
         return True
 
@@ -117,8 +120,10 @@ def generateChromosome() :
                 a_set.add(randint(0,NUM_LOCATIONS-1))
                 if len(a_set)==P:
                         break
-
-        chromosome = sorted(list(a_set))
+       
+        chromosome = (list(a_set))
+        print(chromosome)
+        sys.stdout.flush()
         return chromosome
 # Generating initial population
 def initialpop() :
@@ -130,8 +135,10 @@ def initialpop() :
                 while  True :
                         if(isValid(chromosome)):
                                 break
+                        time.sleep(0.8)
                         chromosome = generateChromosome()
                 i = i + 1
+                print("%s chromosomes accepted" %i)
                 pop.append(chromosome)
         return pop
 
@@ -139,7 +146,11 @@ def initialpop() :
 def isValid(chromosome):
         ShelterList= AssignShelters(chromosome)
         cost=calcCost(chromosome,ShelterList)
-        if( (not checkConstraints(chromosome,ShelterList)) or cost>Budget):
+        print(cost)
+        if( (not checkConstraints(chromosome,ShelterList,0))):
+                return False
+        if(cost>Budget):
+                print("Cost constraint violated")
                 return False
         return True
 
@@ -154,7 +165,7 @@ def fitness_chromosome(chromosome):
         # print(popsc)
         # print(cost)
         # print(dist)
-        return ((popsc/(10^3))+ (cost/(10^5)))/(dist)
+        return ((popsc/(10**3))+ (cost/(10**5)))/(dist)
 
 # Returns list of fitness values of all the chromosomes of my population
 def fitness_pop(pop) :
@@ -269,7 +280,7 @@ for i in range(0, P) :
 
 m.save('index.html')
 
-plt.plot(list(range(1,21)), gen_fitness)
+plt.plot(list(range(1,51)), gen_fitness)
 plt.ylabel('Avg fitness values')
 plt.xlabel('Generations')
 plt.show()
