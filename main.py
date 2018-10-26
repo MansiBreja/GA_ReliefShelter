@@ -19,8 +19,8 @@ from geopy import distance
 random.seed(7561)
 #Choosing population size
 POP_SIZE = 30
-Number_of_gens=50
-P= 5
+Number_of_gens=100
+P= 7
 Budget = 100000000
 K= 30 # the number of times of current population that can be handled by a shelter
 NUM_LOCATIONS= 50
@@ -120,7 +120,7 @@ def generateChromosome() :
                 a_set.add(randint(0,NUM_LOCATIONS-1))
                 if len(a_set)==P:
                         break
-       
+
         chromosome = (list(a_set))
         print(chromosome)
         sys.stdout.flush()
@@ -135,10 +135,10 @@ def initialpop() :
                 while  True :
                         if(isValid(chromosome)):
                                 break
-                        time.sleep(0.8)
+                        # time.sleep(0.8)
                         chromosome = generateChromosome()
                 i = i + 1
-                print("%s chromosomes accepted" %i)
+                # print("%s chromosomes accepted" %i)
                 pop.append(chromosome)
         return pop
 
@@ -280,7 +280,7 @@ for i in range(0, P) :
 
 m.save('index.html')
 
-plt.plot(list(range(1,51)), gen_fitness)
+plt.plot(list(range(1,101)), gen_fitness)
 plt.ylabel('Avg fitness values')
 plt.xlabel('Generations')
 plt.show()
