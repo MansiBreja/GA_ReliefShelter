@@ -1,4 +1,5 @@
 # GA_ReliefShelter
+A terminal based app which selects the most optimal ‘p’ locations for constructing relief shelters in the time of floods, using a genetic algorithm based on features like latitude, longitude, population and expected number of days to submerge. It takes into consideration conflicting objectives like maximisation of a quantity known as population score and minimising the average distance to any shelter, while making sure the cost does not exceed the total budget.
 
 ## Constraints:
 
@@ -30,3 +31,5 @@ F= (O1 + O3 )/O2
 
 ## This is how index.html looks like:
 ![screenshot 223](https://user-images.githubusercontent.com/31369977/47204336-b9c93700-d3a0-11e8-94e6-e51fee0bc367.png)
+
+This project was collectively made by [Sanchit Aggarwal](https://github.com/mr-logix) and [Mansi Breja](https://github.com/MansiBreja) as a part of a 5th Semester course on Genetic Algorithms, NSIT. 
